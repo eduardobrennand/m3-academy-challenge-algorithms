@@ -15,8 +15,14 @@
             Faça um algoritmo que retorne o maior numero encontrado no array
         */
         function maxValue(values) {
-            // implementar logica aqui
-            return 0
+            maiorNumero = null;
+            for (let i = 0; i < values.length; i++) {
+                const element = values[i]
+                if (element > maiorNumero) {
+                    maiorNumero = element;
+                }
+            }
+            return maiorNumero
         }
 
         // Resultados esperados

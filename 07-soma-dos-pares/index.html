@@ -15,8 +15,15 @@
             Faça um algoritmo que retorne a soma de todos os numeros pares de um array
         */
         function sum(numbers) {
-            // implementar logica aqui
-            return 0
+            soma = null;
+            
+            for(var i = 0; i < numbers.length; i++){
+                var element = numbers[i];                
+                if(element % 2 == 0){
+                    soma += element;
+                }
+            }
+            return soma;
         }
 
         // Resultados esperados

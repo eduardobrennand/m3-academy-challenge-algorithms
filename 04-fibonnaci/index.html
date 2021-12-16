@@ -16,8 +16,18 @@
             Fibonnaci: https://pt.wikipedia.org/wiki/Sequ%C3%AAncia_de_Fibonacci
         */
         function fib(values) {
-            // implementar logica aqui
-            return 0
+            var a, b, resultado;
+            a = 0;
+            b = 1;
+            fibonacci = [0, 1]
+
+            for(var i = 0; i < 47; i++) {
+                resultado = a + b;
+                a = b;
+                b = resultado;
+                fibonacci.push(resultado);
+            }
+            return fibonacci[values];
         }
 
         // Resultados esperados

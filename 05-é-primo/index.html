@@ -15,9 +15,23 @@
             Faça um algoritmo que retorne se o numero passado é primo ou não
         */
         function isPrime(number) {
-            // implementar logica aqui
-            return false
+            primo = null;
+            divisores = 0;
+
+            for(var i = 0; i <= number; i++){
+                if(number % i == 0){
+                    divisores++;
+                }
+            if (divisores == 2){
+                primo = true;
+            }
+            else {
+                primo = false;
+            }
         }
+        return primo;
+    }
+        
 
         // Resultados esperados
         console.log(isPrime(2), true) // true
