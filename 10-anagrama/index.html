@@ -15,9 +15,25 @@
             Faça um algoritmo que retorne se um palavra é anagram da outra
         */
         function isAnagram(test, original) {
-            // implementar logica aqui
-            return ""
+        test = test.toLowerCase();
+        original = original.toLowerCase();
+
+        test = test.split("");
+        original = original.split("");
+        
+        test = test.sort();
+        original = original.sort();
+
+        test = test.join("");
+        original = original.join("");
+
+        if (test === original){
+            return true
         }
+        else {
+            return false
+        }
+}
 
         // Resultados esperados
         console.log(isAnagram("foefet", "toffee"), true) // true
